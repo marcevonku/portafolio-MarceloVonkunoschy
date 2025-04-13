@@ -177,3 +177,67 @@ p {
     z-index: 1;
   }
   
+  .contact-section {
+    background-image: url("../images/rombo-naranja-azul-.jpg"); /* Asegurate de tener esta imagen */
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    color: white;
+    position: relative;
+  }
+  
+  .contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Overlay oscuro */
+    z-index: 0;
+  }
+  
+  .contact-section * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+    font-size: 1em;
+    color: #ffdd75;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+  }
+  
+  .contact-form button.btn {
+    align-self: flex-start;
+    background-color: #dd6700;
+    color: white;
+    padding: 12px 24px;
+    border: 2px solid #4b1d06;
+    border-radius: 8px;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 black;
+    cursor: pointer;
+  }
+  .contact-form button.btn:hover {
+    background-color: #c45b00;
+  }
+  
