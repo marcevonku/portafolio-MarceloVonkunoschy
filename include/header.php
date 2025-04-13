@@ -12,7 +12,7 @@
 <body>
     <nav class="site-header">
         <nav class="nav">
-            <div class="logo">MV</div>
+            <div class="logo">Marcelo Vonkunoschy</div>
             <ul class="nav-links">
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="about.php">Sobre mi</a></li>
