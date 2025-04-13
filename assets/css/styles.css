@@ -25,7 +25,15 @@ body {
     font-size: 3.5em;
     margin-bottom: 10 px;
     color: rgb(255, 229, 100);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/*    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+/*    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;*/
+/*    font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+/*      font-family: 'Segoe UI Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 300;
+
+
+
     text-shadow: 1px 1px 0 black;
 }
 
@@ -70,16 +78,26 @@ p {
     color: white;
     padding: 10px 0;
   }
+
   
-  .nav-links {
+  .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;  /* Esto asegura que el logo y los links estén a los extremos */
+    align-items: center;            /* Centra los elementos verticalmente */
+    max-width: 960px;
     margin: auto;
     padding: 0 20px;
   }
-  
+
   .logo {
     font-size: 1.5em;
     font-weight: bold;

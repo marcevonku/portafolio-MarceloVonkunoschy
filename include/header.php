@@ -11,12 +11,14 @@
 
 <body>
     <nav class="site-header">
-        <div class="logo">MV</div>
-        <ul class="nav-links">
-            <li><a href="index.php">Inicio</a></li>
-            <li><a href="about.php">Sobre mi</a></li>
-            <li><a href="proyectos.php">Proyectos</a></li>
-            <li><a href="contacto.php">Contacto</a></li>
-        </ul>
+        <nav class="nav">
+            <div class="logo">MV</div>
+            <ul class="nav-links">
+                <li><a href="index.php">Inicio</a></li>
+                <li><a href="about.php">Sobre mi</a></li>
+                <li><a href="proyectos.php">Proyectos</a></li>
+                <li><a href="contacto.php">Contacto</a></li>
+            </ul>
+        </nav>
     </nav>
 </body>
