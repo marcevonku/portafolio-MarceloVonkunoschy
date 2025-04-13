@@ -6,7 +6,7 @@
         <p>Completá el formulario y te responderé a la brevedad.</p>
     </section>
 
-    <form action="procesar_contacto.php" method="post" class="contact-form">
+    <form action="enviar.php" method="post" class="contact-form">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
 
