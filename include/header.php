@@ -12,7 +12,7 @@
 <body>
     <nav class="site-header">
         <div class="logo">MV</div>
-        <ul class="nav-link">
+        <ul class="nav-links">
             <li><a href="index.php">Inicio</a></li>
             <li><a href="about.php">Sobre mi</a></li>
             <li><a href="proyectos.php">Proyectos</a></li>
