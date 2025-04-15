@@ -1,15 +1,19 @@
+<?php
+// Detecta el nombre del archivo actual, sin extensión .php
+$page = basename($_SERVER['PHP_SELF'], ".php");
+?>
 <!-- @format html -->
 <!DOCTYPE html>
+<html lang="es">
 
 <head>
-    <meta charset="utf8">
-    <meta name="view-port" content="width=divise-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio | Marcelo Vonkunoschy</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-
 </head>
 
-<body>
+<body class="<?php echo $page; ?>">
     <nav class="site-header">
         <nav class="nav">
             <div class="logo">Marcelo Vonkunoschy</div>
@@ -21,4 +25,3 @@
             </ul>
         </nav>
     </nav>
-</body>
