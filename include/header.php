@@ -17,7 +17,12 @@ $page = basename($_SERVER['PHP_SELF'], ".php");
     <nav class="site-header">
         <nav class="nav">
             <div class="logo">Marcelo Vonkunoschy</div>
-            <ul class="nav-links">
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="about.php">Sobre mi</a></li>
                 <li><a href="proyectos.php">Proyectos</a></li>
