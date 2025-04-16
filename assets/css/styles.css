@@ -163,6 +163,7 @@ p {
   .nav-links a:hover {
     text-decoration: underline;
   }
+
   .nav-links {
     list-style: none;
     display: flex;
@@ -281,4 +282,93 @@ p {
   .contact-form button.btn:hover {
     background-color: #c45b00;
   }
+
+
+/* --- MEDIA QUERIES --- */
+
+/* Para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+      height: auto; /* Permite que el contenedor crezca según el contenido */
+      min-height: auto;
+      justify-content: flex-start; /* Alinea el contenido al inicio en pantallas pequeñas */
+  }
+
+  .hero {
+      padding: 20px;
+  }
+
+  .hero h1 {
+      font-size: 2em;
+  }
+
+  .hero h2 {
+      font-size: 1.2em;
+  }
+
+  .nav {
+      flex-direction: column; /* Apila el logo y los enlaces */
+      align-items: flex-start; /* Alinea los elementos a la izquierda */
+      padding: 10px;
+  }
+
+  .nav-links {
+      flex-direction: column; /* Apila los enlaces verticalmente */
+      gap: 10px;
+      margin-top: 10px; /* Espacio entre el logo y los enlaces */
+      width: 100%; /* Ocupa todo el ancho */
+  }
+
+  .nav-links li {
+      display: block; /* Cada enlace en una nueva línea */
+      width: 100%;
+  }
+
+  .nav-links li a {
+      display: block; /* Hace que el enlace ocupe todo el ancho de su li para mejor toque */
+      padding: 10px 0;
+      text-align: left;
+  }
+
+  .contact-form {
+      width: 95%; /* Ocupa casi todo el ancho en móviles */
+      margin: 0 auto;
+  }
+
+  .about-section,
+  .contact-section {
+      padding: 20px; /* Reduce el padding en pantallas pequeñas */
+  }
+}
+
+/* Para tablets (orientación vertical) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .container {
+      padding: 20px;
+  }
+
+  .hero h1 {
+      font-size: 2.2em;
+  }
+
+  .hero h2 {
+      font-size: 1.4em;
+  }
+
+  .nav-links {
+      gap: 15px;
+  }
+
+  .contact-form {
+      width: 80%;
+  }
+}
+
+/* Opcional: Para pantallas más grandes */
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1140px; /* Ajusta el ancho máximo para pantallas grandes */
+  }
+}
   
