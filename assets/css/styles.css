@@ -203,3 +203,83 @@ body.contacto {
   display: inline-block;
 }
 
+
+.nav-toggle {
+  display: none; /* Ocultar por defecto en pantallas grandes */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilos para el menú desplegado (puedes ajustarlos) */
+.nav-links.open {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los elementos a la izquierda cuando se despliega */
+  width: 100%;
+  background-color: #333; /* Un fondo para el menú desplegado */
+  position: absolute;
+  top: 100%; /* Debajo del header */
+  left: 0;
+  padding: 20px;
+  z-index: 99; /* Asegura que esté por encima de otros elementos */
+}
+
+.nav-links.open li {
+  display: block;
+  width: 100%;
+}
+
+.nav-links.open li a {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid #555; /* Separador entre los enlaces */
+}
+
+.nav-links.open li:last-child a {
+  border-bottom: none;
+}
+
+
+/* Media query para mostrar el botón de toggle y ocultar el menú en pantallas pequeñas */
+@media (max-width: 768px) {
+  .nav {
+      position: relative; /* Necesario para posicionar el menú desplegable */
+  }
+
+  .nav-links {
+      display: none; /* Ocultar el menú por defecto en pantallas pequeñas */
+      flex-direction: column; /* Asegurar que los enlaces se apilen */
+      width: 100%;
+      align-items: flex-start;
+  }
+
+  .nav-toggle {
+      display: block; /* Mostrar el botón de toggle */
+  }
+}
+
+/* Estilos para el botón de toggle cuando el menú está abierto (opcional) */
+.nav-toggle.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
