@@ -98,7 +98,7 @@ body {
   min-height: 100vh; /* esto asegura que el body no crezca innecesariamente */
   overflow-x: hidden; /* por si hay algún desborde horizontal */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color:#d4b2f1;/*#C0C0C0; /*#fbe471;*/
+  color:#ede4f5;/*#d4b2f1;/*#C0C0C0; /*#fbe471;*/
   line-height: 1.5;
   text-shadow:
   -1px -1px 0 #000,
@@ -138,7 +138,7 @@ body.contacto {
 
 .site-header {
   background-color: #222;
-  color:#d4b2f1;/*#db9adf;/*#C0C0C0; /*#fbe471;*/
+  color:#ede4f5;/*#db9adf;/*#C0C0C0; /*#fbe471;*/
   /*color: white;*/
   padding: 10px 0;
 }
@@ -177,7 +177,7 @@ body.contacto {
 
 .nav-links li a {
   /*color: white;*/
-  color:#e5b0f0;/*#C0C0C0; /*#fbe471;*/
+  color:#ede4f5;/*#e5b0f0;/*#C0C0C0; /*#fbe471;*/
   text-decoration: none;
   font-weight: bold;
 }
