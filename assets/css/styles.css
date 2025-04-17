@@ -108,12 +108,67 @@ body {
 }
 
 /* Fondo para index.php */
-body.index {
+/*body.index {
   background-image: url("../images/dunas-fibra-blue.avif");
+}**/
+
+body.index {
+  position: relative; /* Necesario para posicionar absolutamente el pseudo-elemento */
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:#ede4f5;
+  line-height: 1.5;
+  text-shadow:
+  -1.5px -1.5px 0 #000,
+  1.5px -1.5px 0 #000,
+  -1.5px 1.5px 0 #000,
+  1.5px 1.5px 0 #000;
 }
+
+body.index::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/dunas-fibra-blue.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.3); /* Aplica el filtro SOLO a la imagen de fondo */
+  z-index: -1; /* Coloca el pseudo-elemento detrás del contenido del body */
+}
+
 /* Fondo para about.php */
 body.about {
+  position: relative; /* Necesario para posicionar absolutamente el pseudo-elemento */
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:#ede4f5;
+  line-height: 1.5;
+  text-shadow:
+  -1.5px -1.5px 0 #000,
+  1.5px -1.5px 0 #000,
+  -1.5px 1.5px 0 #000,
+  1.5px 1.5px 0 #000;
+}
+
+body.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url("../images/alfombra-fibra.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.3); /* Aplica el filtro SOLO a la imagen de fondo */
+  z-index: -1; /* Coloca el pseudo-elemento detrás del contenido del body */
 }
 
 /* Fondo para proyectos.php */
