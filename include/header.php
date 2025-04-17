@@ -26,7 +26,7 @@ $page = basename($_SERVER['PHP_SELF'], ".php");
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="about.php">Sobre mi</a></li>
                 <li><a href="proyectos.php">Proyectos</a></li>
-                <li><a href="certificados.php">Otros Cert.</a></li>
+                <!--<li><a href="certificados.php">Otros Cert.</a></li>-->
                 <li><a href="contacto.php">Contacto</a></li>
             </ul>
         </nav>
