@@ -283,7 +283,6 @@ p {
     background-color: #c45b00;
   }
 
-/* ... tu CSS anterior ... */
 
 /* --- MEDIA QUERIES --- */
 
@@ -291,8 +290,8 @@ p {
 @media (max-width: 768px) {
   .container {
       padding: 15px;
-      /* height: 100vh; <--- ELIMINAR ESTA LÍNEA DE AQUÍ */
-      min-height: auto; /* Permite que el contenedor crezca según el contenido en móviles */
+      height: auto; /* Permite que el contenedor crezca según el contenido */
+      min-height: auto;
       justify-content: flex-start; /* Alinea el contenido al inicio en pantallas pequeñas */
   }
 
@@ -312,9 +311,6 @@ p {
       flex-direction: column; /* Apila el logo y los enlaces */
       align-items: flex-start; /* Alinea los elementos a la izquierda */
       padding: 10px;
-      position: sticky; /* Puedes mantenerlo sticky en móviles si lo deseas */
-      top: 0;
-      z-index: 100;
   }
 
   .nav-links {
@@ -322,11 +318,6 @@ p {
       gap: 10px;
       margin-top: 10px; /* Espacio entre el logo y los enlaces */
       width: 100%; /* Ocupa todo el ancho */
-      display: none; /* Ocultar por defecto en móviles */
-  }
-
-  .nav-links.open {
-      display: flex; /* Mostrar cuando la clase 'open' está activa */
   }
 
   .nav-links li {
@@ -348,21 +339,13 @@ p {
   .about-section,
   .contact-section {
       padding: 20px; /* Reduce el padding en pantallas pequeñas */
-      /* overflow: hidden; <--- ELIMINAR ESTA LÍNEA DE AQUÍ */
-  }
-
-  .nav-toggle {
-      display: block; /* Mostrar el botón de toggle en móviles */
   }
 }
 
-/* Para tablets (orientación vertical) - Puedes ajustar según necesites */
+/* Para tablets (orientación vertical) */
 @media (min-width: 769px) and (max-width: 992px) {
   .container {
       padding: 20px;
-      /* height: auto; <--- Considera ajustar si es necesario para tablets */
-      min-height: auto;
-      justify-content: flex-start;
   }
 
   .hero h1 {
@@ -375,61 +358,95 @@ p {
 
   .nav-links {
       gap: 15px;
-      display: flex !important; /* Mostrar el menú como en escritorio en tablets */
-      flex-direction: row;
-      /* ... otros estilos para tablet ... */
-  }
-
-  .nav-toggle {
-      display: none; /* Ocultar el botón de toggle en tablets (si el menú es visible) */
   }
 
   .contact-form {
       width: 80%;
   }
-
-  .about-section,
-  .contact-section {
-      overflow: visible; /*<--- Asegurar que el contenido se desborde si es necesario */
-  }
 }
 
 /* Opcional: Para pantallas más grandes */
-@media (min-width: 993px) { /* Ajustar el ancho según tu diseño de escritorio */
+@media (min-width: 1200px) {
   .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 20px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; /* Mantener el centrado vertical en escritorio */
-      height: 100vh; /* Mantener la altura del viewport en escritorio */
+      max-width: 1140px; /* Ajusta el ancho máximo para pantallas grandes */
   }
+}
+/* ... tu CSS anterior ... */
 
+.nav-toggle {
+  display: none; /* Ocultar por defecto en pantallas grandes */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilos para el menú desplegado (puedes ajustarlos) */
+.nav-links.open {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los elementos a la izquierda cuando se despliega */
+  width: 100%;
+  background-color: #333; /* Un fondo para el menú desplegado */
+  position: absolute;
+  top: 100%; /* Debajo del header */
+  left: 0;
+  padding: 20px;
+  z-index: 99; /* Asegura que esté por encima de otros elementos */
+}
+
+.nav-links.open li {
+  display: block;
+  width: 100%;
+}
+
+.nav-links.open li a {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid #555; /* Separador entre los enlaces */
+}
+
+.nav-links.open li:last-child a {
+  border-bottom: none;
+}
+
+/* Media query para mostrar el botón de toggle y ocultar el menú en pantallas pequeñas */
+@media (max-width: 768px) {
   .nav {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 20px;
-      position: static; /* El header es estático en escritorio */
+      position: relative; /* Necesario para posicionar el menú desplegable */
   }
 
   .nav-links {
-      display: flex !important; /* Mostrar el menú horizontalmente en escritorio */
-      flex-direction: row;
-      gap: 20px;
-      margin: 0;
-      padding: 0;
-      align-items: center;
+      display: none; /* Ocultar el menú por defecto en pantallas pequeñas */
+      flex-direction: column; /* Asegurar que los enlaces se apilen */
+      width: 100%;
+      align-items: flex-start;
   }
 
   .nav-toggle {
-      display: none; /* Ocultar el botón de toggle en escritorio */
-  }
-
-  .about-section,
-  .contact-section {
-      overflow: visible; /* Permitir el desbordamiento en escritorio si es necesario */
+      display: block; /* Mostrar el botón de toggle */
   }
 }
+
+/* Estilos para el botón de toggle cuando el menú está abierto (opcional) */
+.nav-toggle.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
