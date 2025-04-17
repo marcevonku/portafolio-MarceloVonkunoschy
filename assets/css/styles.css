@@ -326,3 +326,25 @@ body.contacto {
   text-align: center;      /* centra el texto */
   min-height: 100vh;       /* asegura que ocupe toda la altura de la pantalla */
 } 
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------TRABAJAMOS CON BTN INDEX PHP ARCHIVO   -----------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.btn {
+  background-color: #6f6fd5;
+  color: white;
+  text-shadow: -1px -1px 0 black;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 2px solid #064b46; /* borde marrón oscuro */
+}
+
+
+.btn over {
+    background-color: #0056b3;
+
+}
