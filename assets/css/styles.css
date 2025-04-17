@@ -101,10 +101,10 @@ body {
   color:#ede4f5;/*#d4b2f1;/*#C0C0C0; /*#fbe471;*/
   line-height: 1.5;
   text-shadow:
-  -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
+  -1.5px -1.5px 0 #000,
+  1.5px -1.5px 0 #000,
+  -1.5px 1.5px 0 #000,
+  1.5px 1.5px 0 #000;
 }
 
 /* Fondo para index.php */
@@ -113,8 +113,7 @@ body.index {
 }
 /* Fondo para about.php */
 body.about {
-  background-image: url("../images/rombo-naranja-azul-.jpg");
-    /*background-image: url("../images/fondo1.jpg");*/
+  background-image: url("../images/alfombra-fibra.avif");
 }
 
 /* Fondo para proyectos.php */
@@ -188,7 +187,7 @@ body.contacto {
 
 .nav-links a {
   text-decoration: none;
-  color: white;
+  color: #6dd8f3;
   font-weight: bold;
 }
 
