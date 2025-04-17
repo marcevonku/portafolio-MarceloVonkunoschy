@@ -203,6 +203,9 @@ body.contacto {
   display: inline-block;
 }
 
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------ESTILOS PARA TOGGLE Y COMPORTAMIENTOS EN PANTALLAS GRANDES----------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
 
 .nav-toggle {
   display: none; /* Ocultar por defecto en pantallas grandes */
@@ -250,6 +253,9 @@ body.contacto {
   border-bottom: none;
 }
 
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------ESTILOS PARA TOGGLE Y OCULTAR EN MENÚ ORIGINAL ---------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* Media query para mostrar el botón de toggle y ocultar el menú en pantallas pequeñas */
 @media (max-width: 768px) {
@@ -269,6 +275,7 @@ body.contacto {
   }
 }
 
+
 /* Estilos para el botón de toggle cuando el menú está abierto (opcional) */
 .nav-toggle.open span:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
@@ -282,4 +289,20 @@ body.contacto {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------ESTILOS PARA FOOTER PARA MANTENERLO AL FINAL PEGADO-----------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
 
+
+.site-footer {
+  position: fixed; /* Fija el elemento en una posición relativa a la ventana del navegador. Aunque el usuario haga scroll, el footer permanecerá en su lugar. */
+  bottom: 0;        /* Especifica que el borde inferior del elemento debe estar pegado al borde inferior de la ventana del navegador. */
+  left: 0;          /* Especifica que el borde izquierdo del elemento debe estar pegado al borde izquierdo de la ventana del navegador. */
+  width: 100%;       /* Hace que el ancho del footer ocupe el 100% del ancho de su contenedor padre (en este caso, la ventana del navegador debido a 'position: fixed'). */
+  background-color: #222; /* Establece el color de fondo del footer a un gris oscuro (código hexadecimal #222). */
+  color: white;      /* Establece el color del texto dentro del footer a blanco. */
+  text-align: center; /* Centra horizontalmente el texto y otros elementos en línea dentro del footer. */
+  padding: 10px 0;    /* Añade un relleno (espacio interior) de 10 píxeles en la parte superior e inferior del footer, y 0 píxeles a la izquierda y a la derecha. */
+  font-size: 0.9em;   /* Establece el tamaño de la fuente del texto dentro del footer al 90% del tamaño de fuente heredado de su elemento padre. 'em' es una unidad relativa al tamaño de fuente del elemento padre. */
+  z-index: 100;      /* Especifica el orden de apilamiento del elemento. Un valor más alto significa que el elemento se mostrará por encima de otros elementos con valores de z-index más bajos. Esto asegura que el footer se mantenga visible incluso si otros elementos se superponen. */
+}
