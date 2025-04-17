@@ -173,7 +173,37 @@ body.about::before {
 
 /* Fondo para proyectos.php */
 body.proyectos {
+
+}
+
+/* Fondo para proyecto.php */
+body.proyectos {
+  position: relative; /* Necesario para posicionar absolutamente el pseudo-elemento */
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:#ede4f5;
+  line-height: 1.5;
+  text-shadow:
+  -1.5px -1.5px 0 #000,
+  1.5px -1.5px 0 #000,
+  -1.5px 1.5px 0 #000,
+  1.5px 1.5px 0 #000;
+}
+
+body.proyectos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url("../images/fondo-linea-onda-abstracta-hermoso-efecto-luz_541170-821.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.6); /* Aplica el filtro SOLO a la imagen de fondo */
+  z-index: -1; /* Coloca el pseudo-elemento detrás del contenido del body */
 }
 
 /* Fondo para certificados.php */
@@ -183,7 +213,7 @@ body.certificados {
 
 /* Fondo para contacto.php */
 body.contacto {
-  background-image: url("../images/fibra-color-vertical.jpg");
+  background-image: url("../images/fi");
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
@@ -229,7 +259,7 @@ body.contacto {
 
 .logo {
   font-size: 1.5em;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .nav-links {
