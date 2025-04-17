@@ -171,11 +171,6 @@ body.about::before {
   z-index: -1; /* Coloca el pseudo-elemento detrás del contenido del body */
 }
 
-/* Fondo para proyectos.php */
-body.proyectos {
-
-}
-
 /* Fondo para proyecto.php */
 body.proyectos {
   position: relative; /* Necesario para posicionar absolutamente el pseudo-elemento */
@@ -212,8 +207,33 @@ body.certificados {
 }
 
 /* Fondo para contacto.php */
-body.contacto {
-  background-image: url("../images/fi");
+body.proyecto {
+  position: relative; /* Necesario para posicionar absolutamente el pseudo-elemento */
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:#ede4f5;
+  line-height: 1.5;
+  text-shadow:
+  -1.5px -1.5px 0 #000,
+  1.5px -1.5px 0 #000,
+  -1.5px 1.5px 0 #000,
+  1.5px 1.5px 0 #000;
+}
+
+body.contacto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/fibra-color-vertical.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.4); /* Aplica el filtro SOLO a la imagen de fondo */
+  z-index: -1; /* Coloca el pseudo-elemento detrás del contenido del body */
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
@@ -463,6 +483,26 @@ body.contacto {
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------      CUADRÍCULAS PARA ORGANIZAR PROYECT     -----------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+.row {
+  width: 70%;
+  display: flex; /* Convierte el contenedor en un contenedor Flex */
+  flex-direction: row; /* Los elementos se organizarán en fila (por defecto) */
+  /* Otras propiedades para controlar el espaciado y la alineación: */
+  justify-content: space-between; /* Espacio igual entre los elementos */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+.col1, .col2 {
+  /* Puedes definir anchos si lo necesitas */
+   width: 50%; 
+  /* O dejar que los elementos se distribuyan automáticamente */
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------            AJUSTES PARA VER EN  TABLET      -----------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -501,4 +541,56 @@ body.contacto {
     text-align: center;      /* centra el texto */
     min-height: 100vh;       /* asegura que ocupe toda la altura de la pantalla */
   } 
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------TODOS LOS ESTILOS PARA EL FORMULARIO--------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+  /*position: relative;
+  z-index: 1;
+*/
+
+.contact-form {
+  /*max-width: 1500px;*/
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+}
+
+.contact-form label {
+  /*font-weight: bold;*/
+  font-size: 1em;
+  color: #bcecfe;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+.contact-form button.btn {
+  align-self: center; /* Centra el botón horizontalmente dentro de .contact-form */
+  background-color: #4a40fa;
+  color: white;
+  padding: 12px 24px;
+  border: 2px solid #0b0699;
+  border-radius: 8px;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 black;
+  cursor: pointer;
+}
+
+.contact-form button.btn:hover {
+  background-color: #abf5a4;
 }

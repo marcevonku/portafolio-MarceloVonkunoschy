@@ -16,7 +16,7 @@ $page = basename($_SERVER['PHP_SELF'], ".php");
 <body class="<?php echo $page; ?>">
     <nav class="site-header">
         <nav class="nav">
-            <div class="logo">Marcelo Vonkunoschy</div>
+            <div class="logo">Marcelo Vonkunoschy &nbsp;&nbsp;Dev.</div>
             <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
                 <span></span>
                 <span></span>
