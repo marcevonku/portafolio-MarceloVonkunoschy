@@ -1,5 +1,4 @@
 <?php include 'include/header.php'; ?>
-
 <main class="container">
     <section class="hero">
         <h1>Marcelo Vonkunoschy</h1>
@@ -8,5 +7,4 @@
         <a href="proyectos.php" class="btn">Ver proyectos</a>
     </section>
 </main>
-
 <?php include 'include/footer.php'; ?>

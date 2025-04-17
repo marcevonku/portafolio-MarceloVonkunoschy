@@ -98,8 +98,13 @@ body {
   min-height: 100vh; /* esto asegura que el body no crezca innecesariamente */
   overflow-x: hidden; /* por si hay algún desborde horizontal */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #333;
+  color:#d4b2f1;/*#C0C0C0; /*#fbe471;*/
   line-height: 1.5;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
 }
 
 /* Fondo para index.php */
@@ -133,7 +138,8 @@ body.contacto {
 
 .site-header {
   background-color: #222;
-  color: white;
+  color:#d4b2f1;/*#db9adf;/*#C0C0C0; /*#fbe471;*/
+  /*color: white;*/
   padding: 10px 0;
 }
 
@@ -170,7 +176,8 @@ body.contacto {
 }
 
 .nav-links li a {
-  color: white;
+  /*color: white;*/
+  color:#e5b0f0;/*#C0C0C0; /*#fbe471;*/
   text-decoration: none;
   font-weight: bold;
 }
@@ -306,3 +313,16 @@ body.contacto {
   font-size: 0.9em;   /* Establece el tamaño de la fuente del texto dentro del footer al 90% del tamaño de fuente heredado de su elemento padre. 'em' es una unidad relativa al tamaño de fuente del elemento padre. */
   z-index: 100;      /* Especifica el orden de apilamiento del elemento. Un valor más alto significa que el elemento se mostrará por encima de otros elementos con valores de z-index más bajos. Esto asegura que el footer se mantenga visible incluso si otros elementos se superponen. */
 }
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------TRABAJAMOS CON CLASS CONTAINER DEL MAIN-----------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+ .container {
+  display: flex;
+  justify-content: center; /* centra verticalmente */
+  flex-direction: column;
+  align-items: center;     /* centra horizontalmente */
+  text-align: center;      /* centra el texto */
+  min-height: 100vh;       /* asegura que ocupe toda la altura de la pantalla */
+} 
