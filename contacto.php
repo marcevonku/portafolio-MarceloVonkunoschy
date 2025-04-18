@@ -16,7 +16,5 @@
             <button type="submit" class="btn">Enviar</button>
         </form>
     </section>
-
-
 </main>
 <?php include 'include/footer.php'; ?>
