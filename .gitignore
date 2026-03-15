@@ -1,0 +1,22 @@
+
+*.log
+vendor/
+node_modules/
+.env
+.DS_Store
+notas.txt
+
+portafolio-MarceloVonkunoschy/
+├── index.php
+├── about.php
+├── proyectos.php
+├── contacto.php
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   └── images/
+├── includes/
+│   ├── header.php
+│   └── footer.php
+└── .gitignore
