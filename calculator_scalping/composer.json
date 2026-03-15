@@ -1,0 +1,20 @@
+{
+    "name": "lenovo/calculator_scalping",
+    "description": "Calculadora de Scalping",
+    "authors": [
+        {
+            "name": "Marcelo Vonkunoschy",
+            "email": "marcevonku@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lenovo\\CalculatorScalping\\": "src/",
+            "App\\": "App/"
+        }
+    }
+}
