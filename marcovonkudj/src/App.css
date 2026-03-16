@@ -1,18 +1,86 @@
 /* Reset CSS */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -22,8 +90,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -31,16 +108,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -50,43 +131,50 @@ table {
   border-spacing: 0;
 }
 
-.bg{
+.bg {
   background-Size: cover;
   background-Position: center;
   height: 125vh;
-  line-height: auto; 
+  line-height: auto;
 }
 
 /* Media queries para móviles */
 @media only screen and (max-width: 768px) {
   .bg {
-    height: 100vh; /* Ajusta la altura para móviles */
+    height: 100vh;
+    /* Ajusta la altura para móviles */
   }
 }
 
 
 .logo {
   /* margin-top: 5%; */
-  width: 200px; /* ajusta el tamaño según sea necesario */
+  width: 200px;
+  /* ajusta el tamaño según sea necesario */
   height: 200px;
   /*background-color: #yourColor; cambia esto al color de fondo de tu logo*/
-  border-radius: 50%; /* para hacer un círculo si es necesario */
-  animation: rotate 2.5s linear infinite; /* ajusta la duración según sea necesario */
+  border-radius: 50%;
+  /* para hacer un círculo si es necesario */
+  animation: rotate 2.5s linear infinite;
+  /* ajusta la duración según sea necesario */
 }
 
 .logo img {
-  width: 100%; /* asegura que la imagen ocupe todo el espacio del div */
+  width: 100%;
+  /* asegura que la imagen ocupe todo el espacio del div */
   height: 100%;
   border: 3px solid white;
-  border-radius: 50%; /* para hacer un círculo si es necesario */
+  border-radius: 50%;
+  /* para hacer un círculo si es necesario */
 }
 
 @keyframes rotate {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -94,7 +182,8 @@ table {
   align-items: center;
   justify-content: center;
   margin: 0;
-  width: 700px; /* ajusta el tamaño según sea necesario */
+  width: 700px;
+  /* ajusta el tamaño según sea necesario */
   height: 10px;
   /*background-color: #yourColor; cambia esto al color de fondo de tu logo*/
   border-radius: 5%
@@ -134,57 +223,58 @@ table {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.bgUno{
+.bgUno {
   /* border: 1px solid white; */
   background-Color: rgb(156, 3, 141);
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%; 
-  height: 100vh; 
+  width: 100%;
+  height: 100vh;
   background-Size: cover;
-  justify-content: center; 
+  justify-content: center;
   align-content: stretch;
   align-items: center;
 }
 
-.bgDos{
+.bgDos {
   /* border: 1px solid rgb(67, 237, 62); */
   background-color: #18202c;
-  width: 100%; 
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 100vh; 
+  height: 100vh;
   background-Size: cover;
-  justify-content: center; 
+  justify-content: center;
   align-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
-.bgTres{
+.bgTres {
   /* border: 1px solid rgb(67, 237, 62); */
   background-color: #18202c;
   background-Size: cover;
-  width: 100%; 
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   /* height: 100vh;  */
-  justify-content: center; 
+  justify-content: center;
   align-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
-.footer{
+.footer {
   background-color: rgb(1, 1, 29);
   /* border: 2px solid yellow; */
   /* width: 100%; */
@@ -199,17 +289,17 @@ table {
   align-items: center;
 }
 
-footer col img{
+footer col img {
   width: 100px;
 }
 
-form{
+form {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
-  color: white; 
+  color: white;
 }
 
-.voxContact{
+.voxContact {
   margin-top: 1%;
   /* border: 1px solid yellow; */
   background-color: rgba(225, 125, 10, 0.468);
@@ -226,57 +316,61 @@ form{
 /* Media queries para móviles */
 @media only screen and (max-width: 768px) {
   .voxContact {
-    width: 90%; /* Ajusta el ancho para móviles */
-    height: auto; /* Altura automática */
+    width: 90%;
+    /* Ajusta el ancho para móviles */
+    height: auto;
+    /* Altura automática */
     margin-top: 5%;
   }
 }
 
-form input{
+form input {
   width: 100%;
   height: 30px;
   border-radius: 5px;
 }
 
-form textarea{
+form textarea {
   width: 100%;
   border-radius: 5px;
   height: 180px;
   border: 2px solid black;
 }
 
-form button{
+form button {
   margin-top: 5%;
   width: 100%;
   height: 35px;
 }
 
 .contentCorp {
-    /* border: 1px solid yellow; */
-    margin: 2%;
-    width: 250px; 
-    height: 250px;
-    line-height: 280px;    
-    text-align: center;
-    /* flex-basis: 20%; */
-  }
+  /* border: 1px solid yellow; */
+  margin: 2%;
+  width: 250px;
+  height: 250px;
+  line-height: 280px;
+  text-align: center;
+  /* flex-basis: 20%; */
+}
 
 /* Media queries para móviles */
 @media only screen and (max-width: 768px) {
   .contentCorp {
-    width: 80%; /* Ajusta el ancho para móviles */
+    width: 80%;
+    /* Ajusta el ancho para móviles */
     max-width: 200px;
-    height: auto; /* Altura automática para mantener proporción */
+    height: auto;
+    /* Altura automática para mantener proporción */
     line-height: normal;
   }
 }
 
-img{
-margin: 0 auto;
- width:100%; 
+img {
+  margin: 0 auto;
+  width: 100%;
 }
 
-.clearfix{
+.clearfix {
   clear: both;
 }
 
@@ -289,44 +383,51 @@ margin: 0 auto;
 @media only screen and (max-width: 600px) {
   .logo {
     margin-top: 25%;
-    width: 150px; /* ajusta el tamaño según sea necesario */
+    width: 150px;
+    /* ajusta el tamaño según sea necesario */
     height: 150px;
     /*background-color: #yourColor; cambia esto al color de fondo de tu logo*/
-    border-radius: 50%; /* para hacer un círculo si es necesario */
-    animation: rotate 2.5s linear infinite; /* ajusta la duración según sea necesario */
+    border-radius: 50%;
+    /* para hacer un círculo si es necesario */
+    animation: rotate 2.5s linear infinite;
+    /* ajusta la duración según sea necesario */
   }
 
-  .bgUno{
+  .bgUno {
     /* border: 1px solid white; */
     background-Color: rgb(156, 3, 141);
     margin: 0 auto;
     display: flex;
-    flex-direction: column; /* Cambia a column para móviles */
+    flex-direction: column;
+    /* Cambia a column para móviles */
     flex-wrap: wrap;
-    width: 100%; 
-    height: 100vh; /* Ajusta la altura */
+    width: 100%;
+    height: 100vh;
+    /* Ajusta la altura */
     background-Size: cover;
-    justify-content: center; 
+    justify-content: center;
     align-content: center;
     align-items: center;
   }
 
-  .bgTres{
+  .bgTres {
     /* border: 1px solid rgb(67, 237, 62); */
     background-color: #18202c;
-    width: 100%; 
+    width: 100%;
     margin: 0 auto;
     display: flex;
-    flex-direction: column; /* Cambia a column para móviles */
+    flex-direction: column;
+    /* Cambia a column para móviles */
     flex-wrap: wrap;
-    height: 100vh; /* Ajusta la altura */
+    height: 100vh;
+    /* Ajusta la altura */
     background-Size: cover;
-    justify-content: center; 
+    justify-content: center;
     align-content: center;
-    align-items: center; 
+    align-items: center;
   }
 
- 
+
 
 }
 

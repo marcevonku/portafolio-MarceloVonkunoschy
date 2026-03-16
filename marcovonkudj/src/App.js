@@ -25,12 +25,17 @@ function App() {
         buttonIn={true} // incluya un componente button
         title={3} // indica número de canción al dar play
         val={1} // indica que se debe incluir un componente texto
-        logoIn2={true}
-        logoType2={2}
-        title2={1}
-        val2={1}
         text1="SESION UNO - MARCO VONKU DJ"
+        logoIn2={true}
+        logoType2={1}
+        title2={4}
+        val2={1}
         text2="SESION DOS - MARCO VONKU DJ"
+        logoIn3={true}
+        logoType3={1}
+        title3={1}
+        val3={1}
+        text3="SESION TRES - MARCO VONKU DJ"
       />
       <div className="clearfix"></div>
       <Separador title="Servicio: BAR && MUSIC HOUSE" id="resto/3.1"/>

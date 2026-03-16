@@ -4,6 +4,7 @@ import useSound from 'use-sound';
 import elcirco from '../aud/elcirco.mp3';
 import Rizzla from '../aud/Rizzla.mp3';
 import sesion_one from '../aud/sesion_one.mp3';
+import sesion_two from '../aud/sesion_two.mp3';
 
 function ButtonPlay(props) {
   let tema;
@@ -13,6 +14,8 @@ function ButtonPlay(props) {
     tema = Rizzla;
   } else if (props.title === 3) {
     tema = sesion_one;
+  } else if (props.title === 4) {
+    tema = sesion_two;
   }
 
   const [play, { stop }] = useSound(tema);
