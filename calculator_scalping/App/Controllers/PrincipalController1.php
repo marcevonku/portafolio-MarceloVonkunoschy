@@ -2,7 +2,6 @@
 
 // app/Controllers/PrincipalController.php
 namespace App\Controllers;
-die('ingresa controller');
 // Incluye tu modelo de Brokers
 use App\Models\BrokersModel;
 use App\Models\OperacionesModel;
@@ -12,7 +11,6 @@ class PrincipalController
     // Método por defecto: index() - Se ejecuta si la URL es /
     public function index()
     {
-        die('ingresa controller');
         // Instanciamos operaciones model para pasar el historial inicial
         $operacionesModel = new OperacionesModel();
         $historial = $operacionesModel->obtenerTodas();
@@ -225,21 +223,18 @@ class PrincipalController
                 'message' => 'Operación guardada exitosamente',
                 'id' => $id
             ]);
-
         } catch (\Exception $e) {
             http_response_code(500);
             echo json_encode(['success' => false, 'error' => $e->getMessage()]);
         }
     }
 
-    die('ingresa controller');
     /**
      * GET /Principal/historialOperaciones
      * Obtiene el historial de operaciones actualizado
      */
     public function historialOperaciones()
     {
-        die('ingresa controller');
         try {
             header('Content-Type: application/json; charset=utf-8');
 
@@ -250,7 +245,6 @@ class PrincipalController
                 'success' => true,
                 'data' => $historial
             ]);
-
         } catch (\Exception $e) {
             http_response_code(500);
             echo json_encode(['success' => false, 'error' => $e->getMessage()]);
