@@ -70,7 +70,7 @@ function BackGround(props) {
     const value = props.val;
     const text1 = props.text1;
     const text2 = props.text2;
-    const val2 = props.val2;
+    //const val2 = props.val2;
     const logoType2 = props.logoType2;
     const title2 = props.title2;
     // --- NUEVAS VARIABLES PARA EL TERCER LOGO ---
@@ -78,6 +78,11 @@ function BackGround(props) {
     const text3 = props.text3;         // El texto del 3er logo
     const logoType3 = props.logoType3; // El tipo de imagen para LogoBody
     const title3 = props.title3;       // El título para ButtonPlay
+    // --- NUEVAS VARIABLES PARA EL CUARTO LOGO ---
+    const logoIn4 = props.logoIn4;     // Para saber si se muestra el 4to logo
+    const text4 = props.text4;         // El texto del 4to logo
+    const logoType4 = props.logoType4; // El tipo de imagen para LogoBody
+    const title4 = props.title4;       // El título para ButtonPlay
     return props.logoIn ? (
       <div className="bg" style={{ backgroundImage: `url(${fondo})` }}>
         <TextBody value={value} />
@@ -105,6 +110,15 @@ function BackGround(props) {
               <LogoBody logoType={logoType3} />
               <br />
               <ButtonPlay title={title3} />
+            </div>
+          )}
+          {props.logoIn4 && (
+            <div className="text-center">
+              <div style={{ color: 'white', fontFamily: 'Calibri', fontWeight: 900, textShadow: '2px 2px 0 black' }}>{text3}</div>
+              <br />
+              <LogoBody logoType={logoType4} />
+              <br />
+              <ButtonPlay title={title4} />
             </div>
           )}
         </div>

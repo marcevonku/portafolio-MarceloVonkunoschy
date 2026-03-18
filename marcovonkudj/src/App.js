@@ -19,23 +19,28 @@ function App() {
       <NavBasic1 />
       <div className="clearfix" id="inicio"></div>
       <BackGround 
+        text1="SESION UNO - MARCO VONKU DJ"
         fondo={MuroUno}//Aqui indico que imagen cargar en el background
         logoIn={true}// aqui indico que esta sección llevará componente logo girando
         logoType={1}// indico que diseño de logo incluir
         buttonIn={true} // incluya un componente button
         title={3} // indica número de canción al dar play
         val={1} // indica que se debe incluir un componente texto
-        text1="SESION UNO - MARCO VONKU DJ"
+        text2="SESION DOS - MARCO VONKU DJ"
         logoIn2={true}
         logoType2={1}
         title2={4}
         val2={1}
-        text2="SESION DOS - MARCO VONKU DJ"
+        text3="SESION TRES - MARCO VONKU DJ"        
         logoIn3={true}
         logoType3={1}
-        title3={1}
+        title3={5}
         val3={1}
-        text3="SESION TRES - MARCO VONKU DJ"
+        text4="SESION CUATRO - MARCO VONKU DJ"        
+        logoIn4={true}
+        logoType4={1}
+        title4={6}
+        val4={1}
       />
       <div className="clearfix"></div>
       <Separador title="Servicio: BAR && MUSIC HOUSE" id="resto/3.1"/>
