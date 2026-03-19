@@ -141,7 +141,10 @@ table {
 /* Media queries para móviles */
 @media only screen and (max-width: 768px) {
   .bg {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
     /* Ajusta la altura para móviles */
   }
 }
@@ -382,7 +385,7 @@ img {
 /* Estilos para dispositivos con un ancho de pantalla de hasta 600 píxeles */
 @media only screen and (max-width: 600px) {
   .logo {
-    margin-top: 25%;
+    margin-top: 5%;
     width: 150px;
     /* ajusta el tamaño según sea necesario */
     height: 150px;
@@ -400,9 +403,11 @@ img {
     display: flex;
     flex-direction: column;
     /* Cambia a column para móviles */
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
+    padding: 3rem 0;
     /* Ajusta la altura */
     background-Size: cover;
     justify-content: center;
@@ -418,8 +423,10 @@ img {
     display: flex;
     flex-direction: column;
     /* Cambia a column para móviles */
-    flex-wrap: wrap;
-    height: 100vh;
+    flex-wrap: nowrap;
+    height: auto;
+    min-height: 100vh;
+    padding: 3rem 0;
     /* Ajusta la altura */
     background-Size: cover;
     justify-content: center;
