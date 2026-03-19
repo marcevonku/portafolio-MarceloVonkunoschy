@@ -2,7 +2,7 @@
   "name": "marcodj",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://MarcoVonkuDJ.github.io/MarcoVonkuDJ",
+  "homepage": "./",
   "dependencies": {
     "@madzadev/audio-player": "^2.1.3",
     "@testing-library/jest-dom": "^5.17.0",
