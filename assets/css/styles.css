@@ -294,7 +294,9 @@ body.contacto::before {
   /*color: white;*/
   color:#ede4f5;/*#e5b0f0;/*#C0C0C0; /*#fbe471;*/
   text-decoration: none;
-  font-weight: bold;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .nav-links li a:hover {
@@ -304,7 +306,9 @@ body.contacto::before {
 .nav-links a {
   text-decoration: none;
   color: #6dd8f3;
-  font-weight: bold;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .nav-links a:hover {
@@ -473,7 +477,9 @@ body.contacto::before {
   padding: 12px 24px;
   text-decoration: none;
   border-radius: 8px;
-  font-weight: bold;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   border: 2px solid #064b46; /* borde marrón oscuro */
 }
 
