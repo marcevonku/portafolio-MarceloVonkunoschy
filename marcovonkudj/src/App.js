@@ -31,34 +31,41 @@ function App() {
         logoType2={1}
         title2={4}
         val2={1}
-        text3="SESION TRES - MARCO VONKU DJ"        
-        logoIn3={true}
-        logoType3={1}
-        title3={5}
-        val3={1}
-        text4="SESION CUATRO - MARCO VONKU DJ"        
-        logoIn4={true}
-        logoType4={1}
-        title4={6}
-        val4={1}
       />
       <div className="clearfix"></div>
       <Separador title="Servicio: BAR && MUSIC HOUSE" id="resto/3.1"/>
       <div className="clearfix"></div>
       <BackGround
         fondo={imgfiesta2}
+        val={2}
+        text1="SESION TRES - MARCO VONKU DJ"
         logoIn={true}
         logoType={2}
         buttonIn={true}
-        title={2}
-        val={2}
+        title={5}
+        text2="SESION CUATRO - MARCO VONKU DJ"
+        logoIn2={true}
+        logoType2={2}
+        title2={6}
+        val2={2}
       />
       <div className="clearfix"></div>
       <Separador title="Servicio: DISCO && DRINKS" id="bares/3.2"/>
       <div className="clearfix"></div>
       <BackGround 
         fondo={marco_outfitUno}
-        val={3} />
+        val={3}
+        text1="SESION CINCO - MARCO VONKU DJ"
+        logoIn={true}
+        logoType={1}
+        buttonIn={true}
+        title={7}
+        text2="SESION SEIS - MARCO VONKU DJ"
+        logoIn2={true}
+        logoType2={1}
+        title2={8}
+        val2={3}
+      />
       <div className="clearfix"></div>
       <Separador title="Servicio: DISC ALL NIGHT" id="boliches/3.3" />
       <div className="clearfix"></div>

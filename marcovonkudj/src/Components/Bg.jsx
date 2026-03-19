@@ -86,8 +86,8 @@ function BackGround(props) {
     return props.logoIn ? (
       <div className="bg" style={{ backgroundImage: `url(${fondo})` }}>
         <TextBody value={value} />
-        <div className="d-flex justify-content-around align-items-center">
-          <div className="text-center">
+        <div className="d-flex flex-column flex-md-row justify-content-around align-items-center">
+          <div className="text-center mb-5 mb-md-0">
             <div style={{ color: 'white', fontFamily: 'Calibri', fontWeight: 900, textShadow: '2px 2px 0 black' }}>{text1}</div>
             <br />
             <LogoBody logoType={logoType} />
@@ -95,7 +95,7 @@ function BackGround(props) {
             <ButtonPlay title={title} />
           </div>
           {props.logoIn2 && (
-            <div className="text-center">
+            <div className="text-center mb-5 mb-md-0">
               <div style={{ color: 'white', fontFamily: 'Calibri', fontWeight: 900, textShadow: '2px 2px 0 black' }}>{text2}</div>
               <br />
               <LogoBody logoType={logoType2} />
@@ -103,8 +103,8 @@ function BackGround(props) {
               <ButtonPlay title={title2} />
             </div>
           )}
-          {props.logoIn3 && (
-            <div className="text-center">
+          {logoIn3 && (
+            <div className="text-center mb-5 mb-md-0">
               <div style={{ color: 'white', fontFamily: 'Calibri', fontWeight: 900, textShadow: '2px 2px 0 black' }}>{text3}</div>
               <br />
               <LogoBody logoType={logoType3} />
@@ -112,9 +112,9 @@ function BackGround(props) {
               <ButtonPlay title={title3} />
             </div>
           )}
-          {props.logoIn4 && (
-            <div className="text-center">
-              <div style={{ color: 'white', fontFamily: 'Calibri', fontWeight: 900, textShadow: '2px 2px 0 black' }}>{text3}</div>
+          {logoIn4 && (
+            <div className="text-center mb-5 mb-md-0">
+              <div style={{ color: 'white', fontFamily: 'Calibri', fontWeight: 900, textShadow: '2px 2px 0 black' }}>{text4}</div>
               <br />
               <LogoBody logoType={logoType4} />
               <br />
