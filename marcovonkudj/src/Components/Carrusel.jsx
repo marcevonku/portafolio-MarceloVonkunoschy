@@ -31,24 +31,10 @@ const items = [
   { src: require('../img-fondo/logo6.png'), altText: '', caption: '' },
   { src: require('../img-fondo/marco_orange.jpg'), altText: '', caption: '' },
   { src: require('../img-fondo/logo7.png'), altText: '', caption: '' },
-  { src: require('../img-fondo/marco_orange2.jpg'), altText: '', caption: '' },
-  { src: require('../img-fondo/logo9.png'), altText: '', caption: '' },
   { src: require('../img-fondo/marco_outfit.jpg'), altText: '', caption: '' },
   { src: require('../img-fondo/Logo8.jpg'), altText: '', caption: '' },
-  { src: require('../img-fondo/marco_outfit1.jpg'), altText: '', caption: '' },
-  { src: require('../img-fondo/logo1.png'), altText: '', caption: '' },
-  { src: require('../img-fondo/marco_outfit2.jpg'), altText: '', caption: '' },
-  { src: require('../img-fondo/logo10.jpg'), altText: '', caption: '' },
-  { src: require('../img-fondo/marco_outfit3.jpg'), altText: '', caption: '' },
-  { src: require('../img-fondo/logo11.png'), altText: '', caption: '' },
-  { src: require('../img-fondo/marco_outfitUno.jpg'), altText: '', caption: '' },
-  { src: require('../img-fondo/logo12.jpg'), altText: '', caption: '' },
-  { src: require('../img-fondo/marco_outfit_cuatro.jpg'), altText: '', caption: '' },
-  { src: require('../img-fondo/logo2.png'), altText: '', caption: '' },
   { src: require('../img-fondo/marco_parque.jpg'), altText: '', caption: '' },
   { src: require('../img-fondo/logo3.png'), altText: '', caption: '' },
-  { src: require('../img-fondo/marco_parqueUno.jpg'), altText: '', caption: '' },
-  { src: require('../img-fondo/logo4.png'), altText: '', caption: '' },
   { src: require('../img-fondo/marco_senia.jpg'), altText: '', caption: '' },
   { src: require('../img-fondo/logo5.png'), altText: '', caption: '' },
   { src: require('../img-fondo/marco_white.jpg'), altText: '', caption: '' },
@@ -101,7 +87,7 @@ class Carrusel extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <img src={item.src} alt={item.altText}/>
+          <img src={item.src} alt={item.altText} className="d-block w-100 carrusel-img" />
           <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
         </CarouselItem>
       );

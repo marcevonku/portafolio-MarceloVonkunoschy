@@ -441,8 +441,18 @@ img {
     align-items: center;
   }
 
+  .carrusel-img {
+    height: 300px;
+  }
 
 
+
+}
+
+.carrusel-img {
+  height: 500px;
+  object-fit: contain;
+  background-color: #000;
 }
 
 /* Estilos para dispositivos con un ancho de pantalla de 601 píxeles en adelante */
