@@ -1,5 +1,5 @@
 import React from "react";
-import LogoMarco6 from "../img-fondo/LogoMarco6.png"
+import LogoMarco6 from "../img-fondo/logo6.png"
 
 function Footer(){
     return(

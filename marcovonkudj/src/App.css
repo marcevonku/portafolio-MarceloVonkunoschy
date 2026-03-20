@@ -160,15 +160,19 @@ table {
   /* para hacer un círculo si es necesario */
   animation: rotate 2.5s linear infinite;
   /* ajusta la duración según sea necesario */
+  border: 3px solid white;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .logo img {
   width: 100%;
   /* asegura que la imagen ocupe todo el espacio del div */
   height: 100%;
-  border: 3px solid white;
-  border-radius: 50%;
   /* para hacer un círculo si es necesario */
+  object-fit: contain;
+  background-color: #000;
+  transform: scale(1.30);
 }
 
 @keyframes rotate {
@@ -394,6 +398,9 @@ img {
     /* para hacer un círculo si es necesario */
     animation: rotate 2.5s linear infinite;
     /* ajusta la duración según sea necesario */
+    border: 3px solid white;
+    overflow: hidden;
+    box-sizing: border-box;
   }
 
   .bgUno {

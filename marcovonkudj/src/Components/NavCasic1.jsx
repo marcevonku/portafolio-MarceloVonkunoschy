@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import LogoMarco4 from "../img-fondo/LogoMarco4.jpg"
+import LogoMarco4 from "../img-fondo/logo4.png"
 
 function NavBasic1() {
   return (

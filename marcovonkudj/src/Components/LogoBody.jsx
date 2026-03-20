@@ -1,5 +1,4 @@
-import MarcoLogo3 from '../img-fondo/MarcoLogo3.jpg'
-import LogoMarco4 from '../img-fondo/LogoMarco4.jpg';
+import Nuevologo from '../img-fondo/logo3.png';
 import 'bootstrap/dist/css/bootstrap.min.css';  // Asegúrate de importar la hoja de estilos de Bootstrap
 
 function LogoBody(props) {
@@ -10,7 +9,7 @@ function LogoBody(props) {
         <div className="row">
           <div className="content fluid d-flex align-items-center justify-content-center">
             <div className="logo">
-              <img src={LogoMarco4} alt="logo dj"/>
+              <img src={Nuevologo} alt="logo dj"/>
             </div>
           </div>
         </div>
@@ -22,7 +21,7 @@ function LogoBody(props) {
           <div className="content fluid d-flex align-items-center justify-content-center">
             <div className="logo">
               <img 
-                src={MarcoLogo3} 
+                src={Nuevologo} 
                 alt="logo dj"
                 style={{
                   border: "7px solid purple"

@@ -9,21 +9,50 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const items = [
-  {
-    src: require('../img-fondo/foto1.jpg'),
-    altText: '',
-    caption: ''
-  },
-  {
-    src: require('../img-fondo/foto2.jpg'),
-    altText: '',
-    caption: ''
-  },
-  {
-    src: require('../img-fondo/foto3.jpg'),
-    altText: '',
-    caption: ''
-  },
+  { src: require('../img-fondo/marco_1.jpeg'), altText: '', caption: '' },
+  { src: require('../img-fondo/Logo8.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_2.jpeg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo1.png'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_22.webp'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo10.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_3.jpeg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo11.png'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_4.jpeg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo12.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_5.jpeg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo2.png'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_6.jpeg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo3.png'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_7.jpeg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo4.png'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_8.jpeg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo5.png'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_9.jpeg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo6.png'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_orange.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo7.png'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_orange2.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo9.png'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_outfit.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/Logo8.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_outfit1.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo1.png'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_outfit2.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo10.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_outfit3.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo11.png'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_outfitUno.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo12.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_outfit_cuatro.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo2.png'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_parque.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo3.png'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_parqueUno.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo4.png'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_senia.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo5.png'), altText: '', caption: '' },
+  { src: require('../img-fondo/marco_white.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo6.png'), altText: '', caption: '' },
 ];
 
 class Carrusel extends Component {
