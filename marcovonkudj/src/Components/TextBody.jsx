@@ -79,10 +79,11 @@ function TextBody(props) {
         paddingTop: "1% ",
         paddingLeft: "65%",
         paddingRight: "3%",
-        color: "orange",
+        color: "white",
         textAlign: "left",
-        fontSize: "22px",
-        WebkitTextStroke: "1.1px black",
+        fontSize: "28px",
+        WebkitTextStroke: "1.3px black",
+        fontWeight: "bold",
 
       }}>Desde los éxitos actuales a los clásicos que nunca pasan, mi repertorio es tan diverso como tu audiencia. Garantizo una mezcla perfecta que mantendrá a todos en la pista de baile, independientemente de sus gustos.</p>
     </>
