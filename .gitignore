@@ -5,6 +5,8 @@ node_modules/
 .env
 .DS_Store
 notas.txt
+documentacion.md
+plan-estandarizar-rutas-minusculas.md
 
 portafolio-MarceloVonkunoschy/
 ├── index.php
