@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import useSound from 'use-sound';
 import elcirco from '../aud/elcirco.mp3';
-import Rizzla from '../aud/Rizzla.mp3';
+import Rizzla from '../aud/rizzla.mp3';
 import sesion_one from '../aud/sesion_one.mp3';
 import sesion_two from '../aud/sesion_two.mp3';
 import sesion_three from '../aud/sesion_three.mp3';

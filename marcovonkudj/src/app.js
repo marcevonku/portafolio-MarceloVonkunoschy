@@ -1,16 +1,16 @@
 import React from "react";
-import "./App.css";
+import "./app.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import BackGround from "./Components/Bg.jsx";
-// import NavBasic from "./Components/NavBasic.jsx"
-import Separador from "./Components/Separador.jsx";
-import MuroUno from './img-fondo/MuroUno.jpg';
-import marco_outfitUno from './img-fondo/marco_outfitUno.jpg';
+import BackGround from "./components/bg.jsx";
+// import NavBasic from "./components/navbasic.jsx"
+import Separador from "./components/separador.jsx";
+import MuroUno from './img-fondo/murouno.jpg';
+import marco_outfitUno from './img-fondo/marco_outfituno.jpg';
 import imgfiesta2 from './img-fondo/imgfiesta2.jpg';
-import marco_parqueUno from './img-fondo/marco_parqueUno.jpg';
-import Footer from "./Components/Footer.jsx";
-import Carrusel from "./Components/Carrusel";
-import NavBasic1 from "./Components/NavCasic1.jsx";
+import marco_parqueUno from './img-fondo/marco_parqueuno.jpg';
+import Footer from "./components/footer.jsx";
+import Carrusel from "./components/carrusel";
+import NavBasic1 from "./components/navcasic1.jsx";
 
 function App() {
 
