@@ -1,5 +1,5 @@
 import React from "react";
-import Logo8 from "../img-fondo/Logo8.jpg";
+import Logo8 from "../img-fondo/logo8.jpg";
 
 function Footer() {
     return (

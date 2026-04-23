@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const items = [
   { src: require('../img-fondo/marco_1.jpeg'), altText: '', caption: '' },
-  { src: require('../img-fondo/Logo8.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo8.jpg'), altText: '', caption: '' },
   { src: require('../img-fondo/marco_2.jpeg'), altText: '', caption: '' },
   { src: require('../img-fondo/logo1.png'), altText: '', caption: '' },
   { src: require('../img-fondo/marco_22.webp'), altText: '', caption: '' },
@@ -32,7 +32,7 @@ const items = [
   { src: require('../img-fondo/marco_orange.jpg'), altText: '', caption: '' },
   { src: require('../img-fondo/logo7.png'), altText: '', caption: '' },
   { src: require('../img-fondo/marco_outfit.jpg'), altText: '', caption: '' },
-  { src: require('../img-fondo/Logo8.jpg'), altText: '', caption: '' },
+  { src: require('../img-fondo/logo8.jpg'), altText: '', caption: '' },
   { src: require('../img-fondo/marco_parque.jpg'), altText: '', caption: '' },
   { src: require('../img-fondo/logo3.png'), altText: '', caption: '' },
   { src: require('../img-fondo/marco_senia.jpg'), altText: '', caption: '' },
