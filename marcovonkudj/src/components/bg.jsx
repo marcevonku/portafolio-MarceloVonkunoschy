@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import LogoBody from "./LogoBody";
-import ButtonPlay from "./ButtonPlay";
+import LogoBody from "./logobody";
+import ButtonPlay from "./buttonplay";
 import wirra from "../img-fondo/wirra.jpg";
 import birrahouse from "../img-fondo/birrahouse.jpg";
 import elfaro from "../img-fondo/elfaro.jpg";
@@ -9,10 +9,10 @@ import pecados from "../img-fondo/pecados.jpg";
 import elbarcito from "../img-fondo/elbarcito.jpg";
 import laboriqua from "../img-fondo/la boriqua.jpg";
 import kahlo from "../img-fondo/kahlo.jpg";
-import EnvioForm from "./FormSubmit.jsx";
+import EnvioForm from "./formsubmit.jsx";
 import artemisa from "../img-fondo/artemisa.jpg";
-import TextBody from "./TextBody.jsx";
-import Contact from "./Contact.jsx";
+import TextBody from "./textbody.jsx";
+import Contact from "./contact.jsx";
 
 
 function BackGround(props) {
