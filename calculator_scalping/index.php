@@ -3,7 +3,7 @@
 // 1. Definición de Constantes y Rutas
 // Se definen rutas globales para facilitar el acceso a las carpetas principales.
 define('ROOT_PATH', __DIR__);
-define('APP_PATH', ROOT_PATH . '/app');
+define('APP_PATH', ROOT_PATH . '/App');
 define('CONFIG_PATH', ROOT_PATH . '/config');
 
 // Activar reporte de errores para descubrir por qué da Error 500 en Linux
