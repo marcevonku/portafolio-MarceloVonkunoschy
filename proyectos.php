@@ -1,8 +1,9 @@
 <?php include 'include/header.php'; ?>
 <main class="container">
     <section class="hero">
-        <h4>Proyectos</h4>
+        <h1>Proyectos</h1>
         <p>Una selección de proyectos propios: cada uno con su demo funcionando y su código fuente en GitHub.</p>
+        <div class="bio-card projects-card">
         <div class="row">
             <div class="col1">
                 <a href="index.php" class="btn">Portafolio</a>
@@ -31,6 +32,7 @@
                 <a href="https://github.com/marcevonku/portafolio-MarceloVonkunoschy/tree/master/marcovonkudj"
                     style="color:#6dd8f3">Código en GitHub</a>
             </div>
+        </div>
         </div>
     </section>
 </main>

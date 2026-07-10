@@ -641,6 +641,28 @@ body.contacto::before {
   padding: 2rem;
 }
 
+/* Variante de bio-card para la lista de proyectos */
+.projects-card {
+  max-width: 640px;
+  padding: 2rem;
+}
+
+.projects-card .row {
+  width: 100%;
+  justify-content: flex-start; /* anula el space-between: el par botón+link queda junto */
+  gap: 24px;
+}
+
+.projects-card .col1,
+.projects-card .col2 {
+  width: auto; /* cada columna ocupa lo suyo; el gap manda la separación */
+}
+
+.projects-card .btn {
+  min-width: 220px;      /* ancho común: bordes alineados entre filas */
+  text-align: center;
+}
+
 .contact-form {
   /*max-width: 1500px;*/
   width: 100%;
