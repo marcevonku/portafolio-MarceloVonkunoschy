@@ -641,6 +641,26 @@ body.contacto::before {
   padding: 2rem;
 }
 
+/* Mensajes de resultado del formulario de contacto */
+.form-ok,
+.form-error {
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.form-ok {
+  background: rgba(109, 243, 150, 0.15);
+  color: #8af5a8;
+  border: 1px solid rgba(109, 243, 150, 0.4);
+}
+
+.form-error {
+  background: rgba(243, 122, 109, 0.15);
+  color: #f5a08a;
+  border: 1px solid rgba(243, 122, 109, 0.4);
+}
+
 /* Variante de bio-card para la lista de proyectos */
 .projects-card {
   max-width: 640px;
