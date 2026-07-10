@@ -12,17 +12,5 @@ CLAUDE.md
 llms.txt
 notas.md
 
-portafolio-MarceloVonkunoschy/
-├── index.php
-├── about.php
-├── proyectos.php
-├── contacto.php
-├── assets/
-│   ├── css/
-│   │   └── styles.css
-│   ├── js/
-│   └── images/
-├── includes/
-│   ├── header.php
-│   └── footer.php
-└── .gitignore
+# Contiene credenciales SMTP: vive solo en local y en el servidor, nunca en git
+enviar.php
