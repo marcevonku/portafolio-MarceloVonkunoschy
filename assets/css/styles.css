@@ -461,31 +461,99 @@ body.contacto::before {
   align-items: center;     /* centra horizontalmente */
   text-align: center;      /* centra el texto */
   min-height: 100vh;       /* asegura que ocupe toda la altura de la pantalla */
-} 
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------   TARJETA DE BIO EN ABOUT.PHP (about.php)   -----------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+.bio-card {
+  width: 100%;
+  max-width: 720px;
+  margin: 2rem auto 0;
+  padding: 2.5rem;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: left;
+  line-height: 1.6;
+  color: #f4f4f4;
+}
+
+.bio-card p {
+  margin: 0 0 1.25rem;
+}
+
+.bio-card p:last-child {
+  margin-bottom: 0;
+}
+
+.stack-list {
+  list-style: disc;
+  margin: 0 0 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.stack-list li {
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .bio-card {
+    padding: 1.5rem;
+    margin-top: 1rem;
+  }
+}
 
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------TRABAJAMOS CON BTN INDEX PHP ARCHIVO   -----------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
 
 
+.hero p {
+  max-width: 640px; /* ancho de lectura cómodo */
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .btn {
   width: fit-content;
   display: inline-block;
-  background-color: #6f6fd5;
-  color: white;
-  text-shadow: -1px -1px 0 black;
+  background-color: #6dd8f3; /* acento celeste, unificado con los links */
+  color: #0b1020;
+  text-shadow: none; /* anula el contorno negro global del body */
   padding: 12px 24px;
   text-decoration: none;
   border-radius: 8px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   letter-spacing: 0.5px;
-  border: 2px solid #064b46; /* borde marrón oscuro */
+  border: 2px solid #6dd8f3;
 }
 
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #9ae6ff;
+    border-color: #9ae6ff;
+}
+
+/* CTA secundario: solo borde, para no competir con el principal */
+.btn-outline {
+  background-color: transparent;
+  color: #6dd8f3;
+}
+
+.btn-outline:hover {
+  background-color: rgba(109, 216, 243, 0.15);
+  color: #9ae6ff;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
@@ -525,7 +593,12 @@ body.contacto::before {
     align-items: center;     /* centra horizontalmente */
     text-align: center;      /* centra el texto */
     min-height: 100vh;       /* asegura que ocupe toda la altura de la pantalla */
-  } 
+  }
+
+  body.about .hero {
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
 
 }
 
@@ -546,7 +619,12 @@ body.contacto::before {
     align-items: center;     /* centra horizontalmente */
     text-align: center;      /* centra el texto */
     min-height: 100vh;       /* asegura que ocupe toda la altura de la pantalla */
-  } 
+  }
+
+  body.about .hero {
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
@@ -557,13 +635,19 @@ body.contacto::before {
   z-index: 1;
 */
 
+/* Variante de bio-card para el formulario: más angosta, cómoda para campos */
+.contact-card {
+  max-width: 540px;
+  padding: 2rem;
+}
+
 .contact-form {
   /*max-width: 1500px;*/
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 1%;
+  gap: 12px;
 }
 
 .contact-form label {
@@ -587,16 +671,26 @@ body.contacto::before {
 
 .contact-form button.btn {
   align-self: center; /* Centra el botón horizontalmente dentro de .contact-form */
-  background-color: #4a40fa;
-  color: white;
+  background-color: #6dd8f3;
+  color: #0b1020;
   padding: 12px 24px;
-  border: 2px solid #0b0699;
+  border: 2px solid #6dd8f3;
   border-radius: 8px;
-  font-weight: bold;
-  text-shadow: -1px -1px 0 black;
+  font-weight: 600;
+  text-shadow: none;
   cursor: pointer;
 }
 
 .contact-form button.btn:hover {
-  background-color: #abf5a4;
+  background-color: #9ae6ff;
+  border-color: #9ae6ff;
+}
+
+/* El hero centrado a 100vh desborda cuando el contenido es más alto que la pantalla
+   (por eso el h1 quedaba oculto arriba). En Contacto lo anclamos arriba con aire. */
+body.contacto .hero {
+  justify-content: flex-start;
+  min-height: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }

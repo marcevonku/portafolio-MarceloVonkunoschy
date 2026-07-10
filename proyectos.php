@@ -1,17 +1,15 @@
 <?php include 'include/header.php'; ?>
 <main class="container">
     <section class="hero">
-        <h5>Módulos completos con acción.</h5>
-        <h6>Link 1 Demo || Link 2 github </h6>
-        <P>Aquí encontraras información sobre mi, mis proyectos y como contactarme.</P>
-        <h4>Portafolio</h4>
+        <h4>Proyectos</h4>
+        <p>Una selección de proyectos propios: cada uno con su demo funcionando y su código fuente en GitHub.</p>
         <div class="row">
             <div class="col1">
-                <a href="index.php" class="btn">Demo</a>
+                <a href="index.php" class="btn">Portafolio</a>
             </div>
             <div class="col2">
                 <a href="https://github.com/marcevonku/portafolio-MarceloVonkunoschy"
-                    style="color:coral">Link-repo-github</a>
+                    style="color:#6dd8f3">Código en GitHub</a>
             </div>
         </div>
         <br>
@@ -20,8 +18,8 @@
                 <a href="./calculator_scalping/index.php" class="btn">calculadora scalping</a>
             </div>
             <div class="col2">
-                <a href="https://github.com/marcevonku/calculadora_scalping.git"
-                    style="color:coral">Link-repo-github</a>
+                <a href="https://github.com/marcevonku/calculadora_scalping"
+                    style="color:#6dd8f3">Código en GitHub</a>
             </div>
         </div>
         <br>
@@ -30,8 +28,8 @@
                 <a href="https://portafolio-marcelo.vonkunoschy.fednet.ar/marcovonkudj/build/" class="btn">MarcoVonku DJ</a>
             </div>
             <div class="col2">
-                <a href="https://"
-                    style="color:coral">Link-repo-github</a>
+                <a href="https://github.com/marcevonku/portafolio-MarceloVonkunoschy/tree/master/marcovonkudj"
+                    style="color:#6dd8f3">Código en GitHub</a>
             </div>
         </div>
     </section>
